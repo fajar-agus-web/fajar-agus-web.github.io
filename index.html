@@ -2,109 +2,132 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio</title>
-    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#skill">Skill</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#portofolio">Portofolio</a></li>
-    </ul>
+
+    <div class="topnav">
+        <a href="#home" class="active">Portofolio</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#home">Home</a>
+            <a href="#profile">Profile</a>
+            <a href="#skill">Skill</a>
+            <a href="#contact">Contact</a>
+            <a href="#portofolio">Portofolio</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
     <div id="home" class="container-header">
         <div class="inner-header">
-            <h2 class="title-animate">Saya Fajar Agus Hermanto merupakan mahasiswa jurusan teknik informatika di universitas pasundan saya merupakan anak ke 2 dari 2 bersaudara saya memiliki hobi bermain game dan menonton film</h2>
+            <h1 class="title-animate">
+                Saya Fajar Agus Hermanto merupakan mahasiswa jurusan teknik informatika di universitas pasundan saya merupakan anak ke 2 dari 2 bersaudara saya memiliki hobi bermain game dan menonton film
+            </h1>
         </div>
     </div>
 
-    <div id="profile" class="container-profile">
-        <h2 class="centered">About Me</h2>
-        <table class="table-profile">
-            <tr>
-                <td>Nama</td>
-                <td>:</td>
-                <td>Fajar Agus Hermanto</td>
-            </tr>
-            <tr>
-                <td>Usia</td>
-                <td>:</td>
-                <td>19 tahun</td>
-            </tr>
-            <tr>
-                <td>Alamat</td>
-                <td>:</td>
-                <td>Cipendeuy, Subang</td>
-            </tr>
+    <div id="profile" class="container-profile background-stripe">
+        <div class="container">
 
-            <tr>
-                <td>Email</td>
-                <td>:</td>
-                <td>fagoesherman@gmail.com</td>
-            </tr>
-            <tr>
-                <td>Phone</td>
-                <td>:</td>
-                <td>082128228342</td>
-            </tr>
-            <tr>
-                <td>IG</td>
-                <td>:</td>
-                <td>@fajar.the.f</td>
-            </tr>
-        </table>
+            <h2 class="centered title-section">About Me</h2>
+            <div class="row centered">
+                <div class="container-img-profile">
+                    <img src="./img/profile.jpeg" alt="Profile" class="img-profile">
+                </div>
+                <h2>Fajar Agus Hermanto</h2>
+                <h4>19 tahun</h4>
+                <h4>Cipendeuy, Subang</h4>
+                <h4>fagoesherman@gmail.com</h4>
+                <h4>082128228342</h4>
+                <h4>@fajar.the.f</h4>
+            </div>
+        </div>
+
     </div>
 
-    <hr>
+    <hr />
 
     <div id="skill" class="container-skill">
         <h2 class="centered">Skill</h2>
-        <div class="flex-container">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JS</div>
-            <div>mySQL</div>
+
+        <p>HTML</p>
+        <div class="container">
+            <div class="skills html">70%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="container">
+            <div class="skills css">80%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="container">
+            <div class="skills js">75%</div>
+        </div>
+
+        <p>mySQL</p>
+        <div class="container">
+            <div class="skills php">60%</div>
         </div>
     </div>
 
-    <hr>
+    <hr />
 
-    <div id="contact" class="container-contact">
-        <h2 class="centered">Contact</h2>
-        <form class="centered" action="#" method="post">
-            <div>
-                <label for="">Nama</label>
-                <input id="input-nama" name="nama" class="input" type="text">
+    <div id="contact" class="container-contact background-stripe">
+        <div class="container">
+            <div style="text-align:center">
+                <h2>Contact Us</h2>
+                <p>Swing by for a cup of coffee, or leave us a message:</p>
             </div>
-            <div>
-                <label for="">Email</label>
-                <input id="input-email" name="email" class="input" type="email">
+            <div class="row">
+                <div class="column">
+                    <img src="./img/map.jpg" style="width:100%">
+                </div>
+                <div class="column">
+                    <form action="#">
+                        <label for="input-nama">Nama</label>
+                        <input type="text" id="input-nama" name="nama" placeholder="Nama" />
+
+                        <label for="input-email">Email</label>
+                        <input type="email" id="input-email" name="email" placeholder="Email" />
+
+
+                        <label for="msg">Message</label>
+                        <textarea id="msg" name="msg" placeholder="Pesan" style="height: 200px"></textarea>
+
+                        <input id="btn-action" type="submit" value="Submit" />
+                    </form>
+                </div>
             </div>
-            <div>
-                <label for="msg">Message</label>
-                <textarea name="message" class="input" id="msg" cols="30" rows="10"></textarea>
-            </div>
-            <button id="btn-action" class="btn-form">Kirim</button>
-        </form>
+        </div>
+
     </div>
 
-    <hr>
+    <hr />
 
-    <div id="portofolio" class="container-portofolio">
+    <div id="portofolio" class="content">
         <h2 class="centered">Portofolio</h2>
-        <div class="flex-container-porto">
-            <div><img src="./img/pacman.png" class="img-porto" alt="pacman" srcset=""></div>
-            <div>Membuat Game Pacman Dengan Scract</div>
-        </div>
-        <div class="centered">Created By Fajar Agus</div>
+        <img src="./img/pacman.png" class="img-porto" alt="img-porto" style="width: 100%" />
+        <h3>Membuat Game Pacman Dengan Scratch</h3>
+        <p>
+            Game ini dibuat menggunakan software scratch.
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>2021 © Created By Fajar Agus</p>
     </div>
 
     <script src="js/global.js"></script>
